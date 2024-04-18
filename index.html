@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet"></link>
+    <title>Calculadora ReciboPagos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>
+                Calculadora de comisión por transación
+            </h1>
+        </div>
+        <div class="calculadora">
+            <div class="panel">
+                <div class="panel-numbers">
+                    <div class="panel-cont">
+                        <p id="panel-numbers">Seleccione un plan para cotizar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="planes">
+                <div>
+                    <button class="plan24">Plan 24 Horas</button>
+                </div>
+                <div>
+                    <button class="plan72">Plan 72 Horas</button>
+                </div>
+            </div>
+            <div class="container-nums">
+                <div class="numbers">
+                    <div><button class="btn-num">1</button></div>
+                    <div><button class="btn-num">2</button></div>
+                    <div><button class="btn-num">3</button></div>
+                    <div><button class="btn-num">4</button></div>
+                    <div><button class="btn-num">5</button></div>
+                    <div><button class="btn-num">6</button></div>
+                    <div><button class="btn-num">7</button></div>
+                    <div><button class="btn-num">8</button></div>
+                    <div><button class="btn-num">9</button></div>
+                    <div><button class="btn-num">0</button></div>
+                    <div><button class="delete-btn btn-num" id="delete-btn">⟵</button></div>
+                    <div><button class="result-btn btn-num" id="result-btn">=</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-bg"></div>
+
+    <div class="container-result">
+            <div class="upper">
+                <div>
+                    <h2>Cotización</h2>
+                </div>
+                <div>
+                    <button onclick="cerrarResultado()" id="cerrar-modal">x</button>
+                </div>
+            </div>
+            <div class="result-info">
+                <div>
+                    <p>Valor del producto: </p>
+                    <span id="result-product"></span>
+                </div>
+                <div>
+                    <p>Plan adquirido: </p>
+                    <span id="result-plan"></span>
+                </div>
+                <div>
+                    <p>Comisión a pagar: </p>
+                    <span id="result-comision"></span>
+                </div>
+            </div>
+    </div>
+
+    <script src="calculadoraReciboPagos.js"></script>
+</body>
+</html>
